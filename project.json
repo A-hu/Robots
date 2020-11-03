@@ -1,7 +1,7 @@
 {
   "name": "firstBot",
   "description": "Notepad Operations",
-  "main": "OneSequence.xaml",
+  "main": "One Sequence.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.9.3]",
     "UiPath.Mail.Activities": "[1.9.3]",
@@ -42,8 +42,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "OneSequence.xaml",
-      "uniqueId": "6c094915-5831-4b92-947c-667f6668f6c1",
+      "filePath": "One Sequence.xaml",
+      "uniqueId": "92406940-ead6-4726-97c3-044c47860721",
       "input": [],
       "output": []
     }
