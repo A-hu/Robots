@@ -1,0 +1,101 @@
+Delivered-To: louis0911317399@gmail.com
+Received: from 2001-b400-e2ac-e5e0-2c46-3ec8-1e15-2cc2.emome-ip6.hinet.net (2001-b400-e2ac-e5e0-2c46-3ec8-1e15-2cc2.emome-ip6.hinet.net. [2001:b400:e2ac:e5e0:2c46:3ec8:1e15:2cc2])
+	by smtp.gmail.com with ESMTPSA id h3sm1104659pfo
+	.170.2020.11.04.23.11.57        for
+	<louis0911317399@gmail.com>        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+	Wed, 04 Nov 2020 23:11:58 -0800 (PST)
+X-Received: by 2002:a17:90a:8802:: with SMTP id
+ s2mr1031058pjn.149.1604560318896;        Wed, 04 Nov 2020 23:11:58 -0800
+ (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1604560319; cv=none; d=google.com;
+	s=arc-20160816;
+	b=Hz7Nto7BWNgZf5xRtX7zSslB9MoMAXx/FYLbL9HkQ2+xpmEJPsx0GtUqxC/aOne7zzQdScAmzks
+	DfKC1LHpHac6H9cty6u4SRrYS3VQuYrPH809jQjteJgVpP9hzL9zJfh2WFjG97VCw9SMXxqe3/Nfl
+	S8GO++SR10E6+5gsXxC1u278t4SFNYV0JG91kfWQlrPyqfvHb+/C7vvG344UKBZDy9J94b7NItjQc
+	vozqFCnuNFKtSWoj1InLNfdac/TKEwAdhVveDNbVKJhFACOP4Cs9oeEHJE8b4Q0yKNHu0UU5e1wou
+	eWI5qRNAiDaYmJVukTvSeipL3gd/FPLi1R2w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+	s=arc-20160816;
+	h=date:to:references:message-id:subject:mime-version:from:dkim-signature;
+	bh=CuT0dvSICA0S2A6IIpPQ7Q91e5/drHzlQIZ99tyVwYE=;
+	b=KxSiLdZk39yGIb3oTW6Ys+Uuje58pA4XqCasrbwQkNmyx/c8MFHzzck0gWApidKb5Bmr81Kxwpk
+	jqw+oYWjh97PE7GF36N86idfDdHF8cUl+yB4ekuy6yjT6gH7hzqjx1AzmcdyNE0pbRPnsn+A7ehLC
+	OxFEWqOiruMGDl/Ev37Xxgb8+GpMTE1xdA0g0htaT6duw2htBnYzaLoBlzBvMw0jTpV+Q8UXn1mXb
+	iUPqUJNL/F/50Fkxzwe5+yT+m57k/MTmWvsVIVJdixPpgXAyersbHFE+aIq77YBmqXMTMQdKYSGpj
+	oEmPn5X86ONo8RG+pZRkxpwg3bbsmwq8b5DQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+	dkim=pass header.i=@gmail.com header.s=20161025 header.b=X5ooZdY4; spf=pass
+	(google.com: domain of learnhu.com@gmail.com designates 209.85.220.41 as permitted sender)
+	smtp.mailfrom=learnhu.com@gmail.com;
+	dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <learnhu.com@gmail.com>
+Received-SPF: pass (google.com: domain of learnhu.com@gmail.com designates
+ 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+	dkim=pass header.i=@gmail.com header.s=20161025 header.b=X5ooZdY4; spf=pass
+	(google.com: domain of learnhu.com@gmail.com designates 209.85.220.41 as permitted sender)
+	smtp.mailfrom=learnhu.com@gmail.com;
+	dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;
+	h=from:mime-version:subject:message-id:references:to:date;
+	bh=CuT0dvSICA0S2A6IIpPQ7Q91e5/drHzlQIZ99tyVwYE=;
+	b=X5ooZdY4yu36r+qPePtvX0ID+Mq8TAazZDSbMENbq8sIV8+1t9spB9clEuBapo+T/xS55+tCNn3
+	FYS822ocvXKJneJs0PnO1YUuHX8iDbunsLf19K+qnDMweZQg1r3KISB9wrzua6yDGj9MLToNN/qCM
+	jpmCvEvEze8GUEs46Vhp6XyTfumaN9cDePwoEN2ayMN/fO012HpTTNfTrD/fcKOP3IrGhy7Nub1kC
+	LaFSFoZZEWwxBw0qquyLnvK3kI2C/HO703xfedMHdzN+oxgZKo3ASiFW3mWNTrYsnQ7GSeEcuL6tc
+	WzRIfTQl9h4FNAdlM1+KtcGVATm7jMgO6spw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;       
+ d=1e100.net; s=20161025;       
+ h=x-gm-message-state:from:mime-version:subject:message-id:references        
+ :to:date;        bh=CuT0dvSICA0S2A6IIpPQ7Q91e5/drHzlQIZ99tyVwYE=;       
+ b=XzlNxMWh0a3R1hBBJD6U0GpCMuv3dYXn8Rl2xVnxRBykqK2eaMJprxEI+Hq/ORW1BX        
+ 8IWUh5fxqNrE8vKikZyC2wzTYHA9fCPkHS1f0rvAFeYU+VkG5kQ+izRz91cervUfBgnp        
+ ci98tajjVUkHB6vpsa34rYiUhr9UWpfk8vbC9NAeUMUisnQgjMgqAvmIqNXaOEwpNLiC        
+ Bd2UFXjzwvsdKxZ3PtZKpZwEXyRv5a//59GqT6EcvXySw0UsC2QxLLkDqxIG3rG1sqIm        
+ HxtPNAiLiRhC4jWyyRNjUJVPC6ahbhlFL/JiSPInxjor9cnUBr9siSuLxaB6n8zRN3nr        
+ Q7Jg==
+X-Gm-Message-State: AOAM533LxuQVedccSJzkY4cfeV3ei8kNDfbX8l21fq8pvBa/UF0Q/SLM
+	dlMB52AIbeBWy4ISqC1Gvw67lshMoCc=
+X-Google-Smtp-Source: =?us-ascii?q?ABdhPJxINm5q3WLxw0Q7=2Fr0V7UlMKwpBIMmfcm9dNA=2FSSgJ9ppGMf53e6+BoF?=
+ =?us-ascii?q?a8AVOuhTsGWbf=2Fj5g=3D=3D?=
+From: Louis Tseng <learnhu.com@gmail.com>
+MIME-Version: 1.0 (Mac OS X Mail 13.4 \(3608.120.23.2.1\))
+Subject: Fwd: louis0911
+Message-ID: <844AF856-1FF3-44E8-BF33-1DB85BECBD43@gmail.com>
+References: <766E1171-66CA-42F4-B7D0-19F60AD02183@gmail.com>
+To: louis0911317399@gmail.com
+Date: Thu, 5 Nov 2020 15:11:55 +0800
+X-Mailer: Apple Mail (2.3608.120.23.2.1)
+Uid: 65091
+Folder: INBOX
+PlainText: >
+ =?utf-8?b?6ZaL5aeL6L2J5a+E6YO15Lu277yaPiA+IOWvhOS7tuS6ujogTGVhcm5odQ==?=
+ <louis0911317399@gmail.com>>
+ =?utf-8?b?5qiZ6aGMOiBsb3VpczA5MTE+IOaXpeacnzogMjAyMOW5tDEx5pyINeaXpQ==?=
+ GMT+8 =?utf-8?b?5LiL5Y2IMzoxMDoxOT4g5pS25Lu25Lq6Og==?=
+ louis0911317399@gmail.com> >
+Content-Type: multipart/alternative; boundary="=-X5/V/cMqEQAIP0rMIlo8cQ=="
+
+--=-X5/V/cMqEQAIP0rMIlo8cQ==
+Content-Type: text/plain; charset=us-ascii
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=us-ascii"></head><body style="word-wrap: break-word; -webkit-nbsp-mode: space; line-break: after-white-space;" class=""><div><blockquote type="cite" class=""><div class=""><meta http-equiv="Content-Type" content="text/html; charset=us-ascii" class=""><div style="word-wrap: break-word; -webkit-nbsp-mode: space; line-break: after-white-space;" class=""></div></div></blockquote></div><br class=""></body></html>
+--=-X5/V/cMqEQAIP0rMIlo8cQ==
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Content-Id: <4d903a4d-802f-4cf7-bae0-47d5700abdfa>
+
+
+
+> =E9=96=8B=E5=A7=8B=E8=BD=89=E5=AF=84=E9=83=B5=E4=BB=B6=EF=BC=9A
+>=20
+> =E5=AF=84=E4=BB=B6=E4=BA=BA: Learnhu <louis0911317399@gmail.com>
+> =E6=A8=99=E9=A1=8C: louis0911
+> =E6=97=A5=E6=9C=9F: 2020=E5=B9=B411=E6=9C=885=E6=97=A5 GMT+8 =E4=B8=8B=
+=E5=8D=883:10:19
+> =E6=94=B6=E4=BB=B6=E4=BA=BA: louis0911317399@gmail.com
+>=20
+>=20
+
+
+--=-X5/V/cMqEQAIP0rMIlo8cQ==--

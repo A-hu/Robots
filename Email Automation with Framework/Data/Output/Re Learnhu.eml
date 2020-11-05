@@ -1,0 +1,104 @@
+Delivered-To: louis0911317399@gmail.com
+Received: from 2001-b400-e2ac-e5e0-7055-3f09-65fc-0f9e.emome-ip6.hinet.net (2001-b400-e2ac-e5e0-7055-3f09-65fc-0f9e.emome-ip6.hinet.net. [2001:b400:e2ac:e5e0:7055:3f09:65fc:f9e])
+	by smtp.gmail.com with ESMTPSA id r73sm1341220pfc
+	.20.2020.11.04.23.49.41        for
+	<louis0911317399@gmail.com>        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+	Wed, 04 Nov 2020 23:49:42 -0800 (PST)
+X-Received: by 2002:a63:c43:: with SMTP id 3mr1355909pgm.222.1604562583473;       
+ Wed, 04 Nov 2020 23:49:43 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1604562584; cv=none; d=google.com;
+	s=arc-20160816;
+	b=zfYZxRu5EzNrE8VJQsbKH6/6qH5e4NzTjBejIxYYoy+8A3J1fLPMhbKUWL7oJdM67N4q27T8Bxy
+	aQb0i7i2mGEpR5HTxEaOO0OgFiwWB1WGfvhJqzKE87Wck8Kk3JpAVJnAu1cz3unSkUYkr3oEr6DW6
+	ssIft8V2sZXWyI6i4Dn/A5uoLwd61eUaP1tUjJDfkFxkiClG/ubt1Q4alCoBaqpplvzavnGKk80GU
+	L1+ritu+a9Z9id0ojjlpusiE6/gAtN27efA0rW6LC9fZLGGPj8PczGNYzRPo0NZoINl+fGLLUtzo0
+	RUMeNwpF63pOuwNp2vjmGbHxyrv3Wts0Z5Tg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+	s=arc-20160816;
+	h=message-id:in-reply-to:to:references:date:subject:mime-version:from:
+	dkim-signature;
+	bh=/r22pWVQ/8+GRrT5PurKH+2k4CCC6+2IboV1XrUJmVY=;
+	b=pvJ3w6oe+ZQjaBSm+EG3UgYbmWGHsrxFyRC9bu6y3Hus3NgwRwiJ7JCrZXwbJ/RO1ausD6LfqX5
+	105uCtmK99ddQahwMItjos4XkC3eGOVx8uhBqbEjQ71JGvP9EI1dkxhEfNFyQUCawpXnxvP4Zdtje
+	2gl2GpB4Kyz6poP+cLFW6kdSRr7iixxr5MK+3d5gucpVvRaQhZtwzzx7gsYLN9uDxq3U5gKiS3WRN
+	P5Ng99Hcx8klzLuErjdHw84ahXiN4HaGw0Ro1CQlmJwv8Sua9YDBWlBB5DoxtWfsmhGHDaJsv0l7n
+	pGiB8VzMNjMNyJp277DZsUrw5zcnK7PxcBlw==
+ARC-Authentication-Results: i=1; mx.google.com;
+	dkim=pass header.i=@gmail.com header.s=20161025 header.b=AsqByXf7; spf=pass
+	(google.com: domain of learnhu.com@gmail.com designates 209.85.220.41 as permitted sender)
+	smtp.mailfrom=learnhu.com@gmail.com;
+	dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <learnhu.com@gmail.com>
+Received-SPF: pass (google.com: domain of learnhu.com@gmail.com designates
+ 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+	dkim=pass header.i=@gmail.com header.s=20161025 header.b=AsqByXf7; spf=pass
+	(google.com: domain of learnhu.com@gmail.com designates 209.85.220.41 as permitted sender)
+	smtp.mailfrom=learnhu.com@gmail.com;
+	dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;
+	h=from:mime-version:subject:date:references:to:in-reply-to:message-id;
+	bh=/r22pWVQ/8+GRrT5PurKH+2k4CCC6+2IboV1XrUJmVY=;
+	b=AsqByXf7lr8oxhNFFcaiVxaHpCMsX9X007HVs/MIAPeo5TKgHNXkK5LiPI9RAPZ0Y5wJnHx50Kb
+	Nv1FfwAWot4hISMahWOG0XYtaAfiK3Ofg+Sasl77GVv60Z+oLACNd3hce2LW4WBGXqkLd09UYLkXX
+	WsSPPjGHRVLqWNdpF8tQ1aVYLneHT/xbfFTl2EuE8fyxYe0gQiTduI5KUWVQMXnT8AwnRPyY7Y9dr
+	A/ypMo1Pq3zpzZuSM0EsZvZLUsdvMvOe3Y1/f3E+QoA+I52++Xvt4yDNlL/E5itK81Wzt5b3dGa9k
+	OPpN1qjWYxpjh8tEx3+KwswIT6ttebiO0XXA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;       
+ d=1e100.net; s=20161025;       
+ h=x-gm-message-state:from:mime-version:subject:date:references:to        
+ :in-reply-to:message-id;       
+ bh=/r22pWVQ/8+GRrT5PurKH+2k4CCC6+2IboV1XrUJmVY=;       
+ b=RKfvnNiqySag9Wv6gmtvrZXd4Lr3TilXwqv6PDi43du9Fk2Bk9ihg28Dv6iq4Hgu1b        
+ 8uPWjQDgOyv2WE+gmqR128j2bxJn+adQ530DzUCcwWCpXdgavG1XdPGYWxp2XTXSFw7a        
+ +MuQ9U8ycoxJPjhsCPEEA0AN6RypqjeLmBi1wvSGbb3N6glfpRZQE9jogX8aBEiQZw9H        
+ 642B2D5xl8KknEvMb0HDiqXA1EYfgaKL7A3kA8lzEHN/PZMd8FIJLZrKc7ZXQZR/U083        
+ xsQV/bTnL5ytzrJRBBvwcwxHxqQjI2l7EruC33auFm9RZgz0NjaIIT7hK3cUbsznKw4w        
+ 2THg==
+X-Gm-Message-State: AOAM533+bTnkKI5FhBjZt5fCCWZ0bOyN8xtYf7d9n1agL6YnvNcvfPGL
+	MmYicOsGPGOZ+MkOmwe/RmL5HG4e/lU=
+X-Google-Smtp-Source: =?us-ascii?q?ABdhPJyQJmkKuCKdrEcSV8ry=2Fy4KawSCK5+Cpq=2FsK1iUpyWY9E61CgtjHqFN9?=
+ =?us-ascii?q?dS1W3kSbguhL7YVrg=3D=3D?=
+From: Louis Tseng <learnhu.com@gmail.com>
+MIME-Version: 1.0 (Mac OS X Mail 13.4 \(3608.120.23.2.1\))
+Subject: Re: Learnhu
+Date: Thu, 5 Nov 2020 15:49:39 +0800
+References: <710B70A3-C79D-42DB-8AF4-1116850805A7@gmail.com>
+To: louis0911317399@gmail.com
+In-Reply-To: <710B70A3-C79D-42DB-8AF4-1116850805A7@gmail.com>
+Message-ID: <51025000-F7C7-4BCD-B3B1-4A041C8C6F33@gmail.com>
+X-Mailer: Apple Mail (2.3608.120.23.2.1)
+Uid: 65101
+Folder: INBOX
+PlainText: > Louis Tseng <learnhu.com@gmail.com>
+ =?utf-8?b?5pa8IDIwMjDlubQxMeaciDXml6Ug5LiL5Y2IMzoxMSDlr6vpgZPvvJo+?=
+HtmlBody: <html><head><meta http-equiv="Content-Type" content="text/html;
+ charset=utf-8"></head><body style="word-wrap: break-word; -webkit-nbsp-mode:
+ space; line-break: after-white-space;" class=""><br class=""><div><br
+ class=""><blockquote type="cite" class=""><div class="">Louis Tseng &lt;<a
+ href="mailto:learnhu.com@gmail.com" class="">learnhu.com@gmail.com</a>&gt;
+ =?utf-8?b?5pa8IDIwMjDlubQxMeaciDXml6Ug5LiL5Y2IMzoxMQ==?=
+ =?utf-8?b?IOWvq+mBk++8mjwvZGl2Pjxicg==?=
+ class="Apple-interchange-newline"><div class=""><img apple-inline="yes"
+ id="B06AD9DE-36EE-4AE7-AAED-9E04FFB2B5AD"
+ src="cid:6EB517C0-FBC3-42ED-979A-9AD55504C2E3"
+ class=""></div></blockquote></div><br class=""></body></html>
+Content-Type: multipart/alternative; boundary="=-Vx898hqaDhCICRTOGo0osQ=="
+
+--=-Vx898hqaDhCICRTOGo0osQ==
+Content-Type: text/html; charset=utf-8
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body style="word-wrap: break-word; -webkit-nbsp-mode: space; line-break: after-white-space;" class=""><br class=""><div><br class=""><blockquote type="cite" class=""><div class="">Louis Tseng &lt;<a href="mailto:learnhu.com@gmail.com" class="">learnhu.com@gmail.com</a>&gt; 於 2020年11月5日 下午3:11 寫道：</div><br class="Apple-interchange-newline"><div class=""><img apple-inline="yes" id="B06AD9DE-36EE-4AE7-AAED-9E04FFB2B5AD" src="cid:6EB517C0-FBC3-42ED-979A-9AD55504C2E3" class=""></div></blockquote></div><br class=""></body></html>
+--=-Vx898hqaDhCICRTOGo0osQ==
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Content-Id: <640e42fc-a43b-4e25-a7f4-989c135888a3>
+
+
+
+> Louis Tseng <learnhu.com@gmail.com> =E6=96=BC 2020=E5=B9=B411=E6=9C=88=
+5=E6=97=A5 =E4=B8=8B=E5=8D=883:11 =E5=AF=AB=E9=81=93=EF=BC=9A
+>=20
+
+
+--=-Vx898hqaDhCICRTOGo0osQ==--

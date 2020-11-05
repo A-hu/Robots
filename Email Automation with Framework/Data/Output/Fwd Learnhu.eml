@@ -1,0 +1,135 @@
+Delivered-To: louis0911317399@gmail.com
+Received: from 2001-b400-e2ac-e5e0-2c46-3ec8-1e15-2cc2.emome-ip6.hinet.net (2001-b400-e2ac-e5e0-2c46-3ec8-1e15-2cc2.emome-ip6.hinet.net. [2001:b400:e2ac:e5e0:2c46:3ec8:1e15:2cc2])
+	by smtp.gmail.com with ESMTPSA id h3sm1104659pfo
+	.170.2020.11.04.23.12.03        for
+	<louis0911317399@gmail.com>        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+	Wed, 04 Nov 2020 23:12:04 -0800 (PST)
+X-Received: by 2002:a62:2582:0:b029:18b:37c0:766b with SMTP id
+ l124-20020a6225820000b029018b37c0766bmr1334961pfl.74.1604560324706;       
+ Wed, 04 Nov 2020 23:12:04 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1604560325; cv=none; d=google.com;
+	s=arc-20160816;
+	b=bQ+B9xcTqloSff/wUclLR5KA7LCQOL7fSb18PVnihlzTXd5ZstOiDP/LHjfF2nA/Bs+M0H6rZvy
+	8fG5wrVT0rtdm0XTExOOtPwYwx46Eqwee1hsrf1yDHvpZzKhqDWbdTjoNrfuoUzzQBhiSV3oXDyUF
+	E8ucEq16p2DvNVfOqyQ9mzcrCga37QPZukbOJvW2i0NOH3uh0eIh385vfDsRDqnM5BkcLWMWsksDK
+	hey3PfXZdMGX2ExVItPIvQNRXtewccGve9jzQFodwEa25jy2wGkiOPXU7vzIGR3QrzAwWlMX4WdCL
+	stB1JpW/cWax+pe+txstQAK/njFdA+R3w5Zw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+	s=arc-20160816;
+	h=date:to:references:message-id:subject:mime-version:from:dkim-signature;
+	bh=mghjcNXXHLqo6A50N1y9mMsArX4zYTOTUPu03FbIlmU=;
+	b=Ni7lEHY73FPE1Ggz942Ne7FYgjW5nwvXDAoGXTsak2j8pJCTl4t7X5T1U06iybHBjndlAA1tKQr
+	RFr5ZtIkdUvCQ1SeIi1gKLzm3oP52Y4+4gojJpAYuvpTmNGkx+mevqzuqfxj4+C44aKO6XNpMz281
+	2roULX7jcq4LSb75uLoNCrCUzf8OkeF5c4OjY8cHAZJxsiiqcdNZsdX+pYFI0I3+PleMPxjK78O4J
+	g215755y5UpvktUtACr/9BeDkf9fzwTXfUbsRkh7WDW2N+RnSARNcfIl8NNXEnNWmJ++8wUKQsy2k
+	du15h0k8F3qS39eDhSUr03dIX9sVOWAUPb7g==
+ARC-Authentication-Results: i=1; mx.google.com;
+	dkim=pass header.i=@gmail.com header.s=20161025 header.b=uA9CCqMF; spf=pass
+	(google.com: domain of learnhu.com@gmail.com designates 209.85.220.41 as permitted sender)
+	smtp.mailfrom=learnhu.com@gmail.com;
+	dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <learnhu.com@gmail.com>
+Received-SPF: pass (google.com: domain of learnhu.com@gmail.com designates
+ 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+	dkim=pass header.i=@gmail.com header.s=20161025 header.b=uA9CCqMF; spf=pass
+	(google.com: domain of learnhu.com@gmail.com designates 209.85.220.41 as permitted sender)
+	smtp.mailfrom=learnhu.com@gmail.com;
+	dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;
+	h=from:mime-version:subject:message-id:references:to:date;
+	bh=mghjcNXXHLqo6A50N1y9mMsArX4zYTOTUPu03FbIlmU=;
+	b=uA9CCqMFEQLCeBeOhXlCpJUONQfTfDly7OtaJnGss3FWHFKe82YUA6iaLJylvekGvFxqX7ZCquF
+	4ML5jlccl9/N56BlLMcQv/8zdt27OZUwepQy3NM5RoXM9LCuU8k9xECjkvXIf16RRG2MmXUspXSjR
+	CYc0MvS3jf1AJUoez2UVyB44bOh7R0P20NfhkV1gYjAdRFmhgKKHN7Io/9t4Fi3UfTxR3mcr+D/6m
+	H4CE972Jnod4rfmTbhRa3gtOKS3rez3IrbX+D2WDhPHG3V1qOXNjWO0zeAgjuyZSXEpJ1Q3A0IWIG
+	vIu4ElPl+kWgpNiH1tzCxOWRJDT/s191PnGA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;       
+ d=1e100.net; s=20161025;       
+ h=x-gm-message-state:from:mime-version:subject:message-id:references        
+ :to:date;        bh=mghjcNXXHLqo6A50N1y9mMsArX4zYTOTUPu03FbIlmU=;       
+ b=ruAxHxxBwFqKsU1VkWa24iQyNJEN9HjY/kSEj/GuEv7H5Wik7RdnvGa+LppeFAzx+P        
+ 53MJoQCg5y8syK2RBswbfb/LqUZ6WFzDEyukoyS2f34NWIgImhE4ij3ukSOEHTpKkH5Z        
+ nPwxG9UGGzjVs4rbSeSjjcaPLA3Q+wmKnFqUXFsOTwwW7N4qO72q53Fxwhvq/pTlF2yY        
+ d44eME/nVp4/sIIq0MClC4mxbmFV31nxwPL8BJicsSrEodGsa0mz1MmIQflwN/wjzL0k        
+ fLBCxb7nbZeTloeCY1ehYq7IhJ8SlKoKZc11lnDAGZJfK1lCl38DyAAuBqpOkMNVzCe4        
+ NeZQ==
+X-Gm-Message-State: AOAM531Rwut4krrAOJaDFAd4ldTdj5oTwu04OQa4Y25vyfqUk3dszLZI
+	GaPRbcwAf0gF1qA6nAht01+D4znmdzI=
+X-Google-Smtp-Source: =?us-ascii?q?ABdhPJy3duOWh0ccfC2Hg0XbnnKH82KKIjf68edkhSx2K3w+RMdxBRlE4=2F40h?=
+ =?us-ascii?q?ovSojdRGki17+yMuA=3D=3D?=
+From: Louis Tseng <learnhu.com@gmail.com>
+MIME-Version: 1.0 (Mac OS X Mail 13.4 \(3608.120.23.2.1\))
+Subject: Fwd: Learnhu
+Message-ID: <36B48271-F782-4B2C-852A-DCAD66A69DDA@gmail.com>
+References: <710B70A3-C79D-42DB-8AF4-1116850805A7@gmail.com>
+To: louis0911317399@gmail.com
+Date: Thu, 5 Nov 2020 15:12:01 +0800
+X-Mailer: Apple Mail (2.3608.120.23.2.1)
+Uid: 65092
+Folder: INBOX
+PlainText: >
+ =?utf-8?b?6ZaL5aeL6L2J5a+E6YO15Lu277yaPiA+IOWvhOS7tuS6ujogTG91aXMgVHNlbmc=?=
+ <learnhu.com@gmail.com>>
+ =?utf-8?b?5qiZ6aGMOiBMZWFybmh1PiDml6XmnJ86IDIwMjDlubQxMeaciDXml6UgR01UKzg=?=
+ =?utf-8?b?IOS4i+WNiDM6MTE6MTU+IOaUtuS7tuS6ujo=?= louis0911317399@gmail.com>
+HtmlBody: <html><head><meta http-equiv="Content-Type" content="text/html;
+ charset=utf-8"></head><body style="word-wrap: break-word; -webkit-nbsp-mode:
+ space; line-break: after-white-space;" class=""><br class=""><div><br
+ class=""><blockquote type="cite" class=""><div
+ =?utf-8?b?Y2xhc3M9IiI+6ZaL5aeL6L2J5a+E6YO15Lu277yaPC9kaXY+PGJy?=
+ class="Apple-interchange-newline"><div style="margin-top: 0px; margin-right:
+ 0px; margin-bottom: 0px; margin-left: 0px;" class=""><span
+ style="font-family: -webkit-system-font, Helvetica Neue, Helvetica,
+ sans-serif; color:rgba(0, 0, 0, 1.0);" class=""><b
+ =?utf-8?b?Y2xhc3M9IiI+5a+E5Lu25Lq6Og==?= </b></span><span style="font-family:
+ -webkit-system-font, Helvetica Neue, Helvetica, sans-serif;" class="">Louis
+ Tseng &lt;<a href="mailto:learnhu.com@gmail.com"
+ class="">learnhu.com@gmail.com</a>&gt;<br class=""></span></div><div
+ style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left:
+ 0px;" class=""><span style="font-family: -webkit-system-font, Helvetica Neue,
+ Helvetica, sans-serif; color:rgba(0, 0, 0, 1.0);" class=""><b
+ =?utf-8?b?Y2xhc3M9IiI+5qiZ6aGMOg==?= </b></span><span style="font-family:
+ -webkit-system-font, Helvetica Neue, Helvetica, sans-serif;" class=""><b
+ class="">Learnhu</b><br class=""></span></div><div style="margin-top: 0px;
+ margin-right: 0px; margin-bottom: 0px; margin-left: 0px;" class=""><span
+ style="font-family: -webkit-system-font, Helvetica Neue, Helvetica,
+ sans-serif; color:rgba(0, 0, 0, 1.0);" class=""><b
+ =?utf-8?b?Y2xhc3M9IiI+5pel5pyfOg==?= </b></span><span style="font-family:
+ -webkit-system-font, Helvetica Neue, Helvetica, sans-serif;"
+ =?utf-8?b?Y2xhc3M9IiI+MjAyMOW5tDEx5pyINeaXpSBHTVQrOCDkuIvljYgzOjExOjE1PGJy?=
+ class=""></span></div><div style="margin-top: 0px; margin-right: 0px;
+ margin-bottom: 0px; margin-left: 0px;" class=""><span style="font-family:
+ -webkit-system-font, Helvetica Neue, Helvetica, sans-serif; color:rgba(0, 0,
+ 0, 1.0);" class=""><b =?utf-8?b?Y2xhc3M9IiI+5pS25Lu25Lq6Og==?=
+ </b></span><span style="font-family: -webkit-system-font, Helvetica Neue,
+ Helvetica, sans-serif;" class=""><a href="mailto:louis0911317399@gmail.com"
+ class="">louis0911317399@gmail.com</a><br class=""></span></div><br
+ class=""><div class=""><img class="" apple-inline="yes"
+ id="F7FF3181-D45D-42AA-A561-0237D413198C"
+ src="cid:5ADD2D69-98E4-4FA8-BC7D-8FDC3E40804F"></div></blockquote></div><br
+ class=""></body></html>
+Content-Type: multipart/alternative; boundary="=-p2h0hcHfBe3lzZVh85T3TQ=="
+
+--=-p2h0hcHfBe3lzZVh85T3TQ==
+Content-Type: text/html; charset=utf-8
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body style="word-wrap: break-word; -webkit-nbsp-mode: space; line-break: after-white-space;" class=""><br class=""><div><br class=""><blockquote type="cite" class=""><div class="">開始轉寄郵件：</div><br class="Apple-interchange-newline"><div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;" class=""><span style="font-family: -webkit-system-font, Helvetica Neue, Helvetica, sans-serif; color:rgba(0, 0, 0, 1.0);" class=""><b class="">寄件人: </b></span><span style="font-family: -webkit-system-font, Helvetica Neue, Helvetica, sans-serif;" class="">Louis Tseng &lt;<a href="mailto:learnhu.com@gmail.com" class="">learnhu.com@gmail.com</a>&gt;<br class=""></span></div><div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;" class=""><span style="font-family: -webkit-system-font, Helvetica Neue, Helvetica, sans-serif; color:rgba(0, 0, 0, 1.0);" class=""><b class="">標題: </b></span><span style="font-family: -webkit-system-font, Helvetica Neue, Helvetica, sans-serif;" class=""><b class="">Learnhu</b><br class=""></span></div><div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;" class=""><span style="font-family: -webkit-system-font, Helvetica Neue, Helvetica, sans-serif; color:rgba(0, 0, 0, 1.0);" class=""><b class="">日期: </b></span><span style="font-family: -webkit-system-font, Helvetica Neue, Helvetica, sans-serif;" class="">2020年11月5日 GMT+8 下午3:11:15<br class=""></span></div><div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;" class=""><span style="font-family: -webkit-system-font, Helvetica Neue, Helvetica, sans-serif; color:rgba(0, 0, 0, 1.0);" class=""><b class="">收件人: </b></span><span style="font-family: -webkit-system-font, Helvetica Neue, Helvetica, sans-serif;" class=""><a href="mailto:louis0911317399@gmail.com" class="">louis0911317399@gmail.com</a><br class=""></span></div><br class=""><div class=""><img class="" apple-inline="yes" id="F7FF3181-D45D-42AA-A561-0237D413198C" src="cid:5ADD2D69-98E4-4FA8-BC7D-8FDC3E40804F"></div></blockquote></div><br class=""></body></html>
+--=-p2h0hcHfBe3lzZVh85T3TQ==
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Content-Id: <ae66daa9-0078-4865-afa4-de0297ec8915>
+
+
+
+> =E9=96=8B=E5=A7=8B=E8=BD=89=E5=AF=84=E9=83=B5=E4=BB=B6=EF=BC=9A
+>=20
+> =E5=AF=84=E4=BB=B6=E4=BA=BA: Louis Tseng <learnhu.com@gmail.com>
+> =E6=A8=99=E9=A1=8C: Learnhu
+> =E6=97=A5=E6=9C=9F: 2020=E5=B9=B411=E6=9C=885=E6=97=A5 GMT+8 =E4=B8=8B=
+=E5=8D=883:11:15
+> =E6=94=B6=E4=BB=B6=E4=BA=BA: louis0911317399@gmail.com
+>=20
+
+
+--=-p2h0hcHfBe3lzZVh85T3TQ==--
