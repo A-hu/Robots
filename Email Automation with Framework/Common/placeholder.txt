@@ -1,0 +1,1 @@
+Common folder should be used to store all xaml files for common actions (ex: file read/write) or commonly used app(ex:Excel, MS IE) without business logic.

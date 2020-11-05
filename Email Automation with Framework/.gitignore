@@ -1,0 +1,20 @@
+#Other file
+*.log
+.DS_Store
+.vscode
+~*.xlsx
+~*.docx
+
+#UiPath File
+Exceptions_Screenshots/*.png
+*PackageCache.json
+*ProjectSettings.json
+*.cache
+*.props
+*.backup
+*AllDependencies.json
+
+#UiPath Folder
+.local/
+.objects/
+.settings/
